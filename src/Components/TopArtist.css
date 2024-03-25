@@ -1,0 +1,72 @@
+.content {
+  position: absolute; /* Position the TopArtist component absolutely */
+  top: 50%; /* Place it at the center of the ParallaxBanner */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it perfectly */
+  width: 100%; /* Ensure the TopArtist component spans the full width of the ParallaxBanner */
+  text-align: center; /* Center any content within the TopArtist component */
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+.carousel { 
+  grid-area: 2 / 2 / 3 / 3; 
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+  
+.button-left { 
+  grid-area: 1 / 1 / 2 / 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-right { 
+  grid-area: 1 / 3 / 2 / 4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-data { 
+  grid-area: 1 / 2 / 2 / 3; 
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+  .image-data { 
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+
+  .text-data { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    float: left; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .text-data h2{
+    text-align: center;
+    color: #0bee6e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
