@@ -1,3 +1,22 @@
+# Description, what it does and expedients
+Simple web application where you can view data from Spotify.
+The top three artists you listen to the most and for each one you can view his song you listen to the most, his most popular song and his released album.
+
+First you will have to have a Spotify account because you will have to log into it if you want to test it. 
+Second thing you will have to create a developer dashbord with your spotify account.
+
+I created the backend, then the data processing and the Spotify api callback with .NET6(C#). Also in my account you will find the repository to it.
+You will need to have it locally and start it for everything to work.
+Within the repository inherent to the backend it will be explained how to set up the backend locally.
+Within this project in the .env file, which you will need to add to the root of the project, you will need to set the value of the environment variables that indicated the backend url:
+REACT_APP_BACKEND_BASE_PATH=url_of_your_backend
+
+I hope you like it.
+
+# Resources
+.NET Spotify Api GitHub Project: https://github.com/EdivanSteri/SpotifyApi.
+Spotify developer dashbord: https://developer.spotify.com/documentation/web-api.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
